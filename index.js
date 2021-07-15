@@ -4,6 +4,9 @@ const path = require("path");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
+const htmlTemplates = require("./src/htmltemplates")
+
+var allEmployees = []
 
 
 
@@ -29,6 +32,7 @@ function employeePreference() {
         
             default:
                 console.log("thanks for using our system!")
+           fs.writeFileSync(path.join(__dirname, "team.html"), htmlTemplates(allEmployees), "utf-8" )     
                 break;
         }
     }) 
@@ -65,6 +69,7 @@ function managerQuestions() {
         responses.managerId,
         responses.managerOfficeNumber
       );
+      allEmployees.push(manager)
       employeePreference()
     });
 }
@@ -100,6 +105,7 @@ function engineerQuestions() {
         responses.engineerId,
         responses.engineerGitHub
       );
+      allEmployees.push(engineer)
       employeePreference()
     });
     
@@ -137,6 +143,7 @@ function internQuestions() {
         responses.internId,
         responses.internSchoolName
       );
+      allEmployees.push(intern)
       employeePreference()
     });
 }
