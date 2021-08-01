@@ -2,8 +2,9 @@ function managerHtml(manager) {
   return `
 
 
-
-<div class="card" style="width: 18rem;">
+<div class="container">
+  <div class="row"><div class="col-6">
+<div class="card mc-auto mb-3" style="width: 18rem;">
   <div class="card-body">
     <h2 class="card-title">${manager.getName()}</h2>
     <h5 class="card-title">${manager.getRole()}</h5>
@@ -22,7 +23,9 @@ function engineerHtml(engineer) {
 
 
 
-<div class="card" style="width: 18rem;">
+<div class="container">
+  <div class="row"><div class="col-6">
+<div class="card mc-auto mb-3" style="width: 18rem;">
   <div class="card-body">
     <h2 class="card-title"><${engineer.getName()}</h2>
     <h5 class="card-title">${engineer.getRole()}</h5>
@@ -40,8 +43,9 @@ function internHtml(intern) {
   return `
 
 
-
-<div class="card" style="width: 18rem;">
+<div class="container">
+  <div class="row"><div class="col-6">
+<div class="card mc-auto mb-3" style="width: 18rem;">
   <div class="card-body">
     <h2 class="card-title">${intern.getName()}</h2>
     <h5 class="card-title">${intern.getRole()}</h5>
@@ -93,6 +97,12 @@ console.log(team)
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
 </head>
 <body>
+
+<div class="jumbotron jumbotron-fluid" style='background-color: #ff0000;'>
+<div class="container">
+  <h1 class="display-4 text-center">My Team</h1>
+</div>
+</div>
 
 ${team}
     
