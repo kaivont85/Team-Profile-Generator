@@ -44,7 +44,7 @@ function managerQuestions() {
       {
         type: "input",
         name: "managerName",
-        message: "What is your name?",
+        message: "What is the employee's name?",
       },
       {
         type: "input",
@@ -79,7 +79,7 @@ function engineerQuestions() {
       {
         type: "input",
         name: "engineerName",
-        message: "What is your name?",
+        message: "What is the employee's name?",
       },
       {
         type: "input",
@@ -117,7 +117,7 @@ function internQuestions() {
       {
         type: "input",
         name: "internName",
-        message: "What is your name?",
+        message: "What is the employee's name?",
       },
       {
         type: "input",

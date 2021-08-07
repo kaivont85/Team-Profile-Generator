@@ -23,7 +23,7 @@ test("can generate name of Engineer", function() {
     expect(larry.getName()).toBe(expected)
 })
 test("can generate gitHub of Engineer", function() {
-    const expected = 2
+    const expected = "kaivont85"
     const larry = new Engineer(2, "larry@email.com", "larry sanders", expected)
     expect(larry.getGitHub()).toBe(expected)
 })
