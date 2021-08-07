@@ -25,7 +25,7 @@ test("can generate name of Intern", function() {
 test("can generate school of Intern", function() {
     const expected = "hard knocks"
     const larry = new Intern(2, "larry@email.com", "larry sanders", expected)
-    expect(larry.getSchool()).toBe(expected)
+    expect(larry.getSchoolName()).toBe(expected)
 })
 test("can generate role of Intern", function() {
     const larry = new Intern(2, "larry@email.com", "larry sanders", "hard knocks")
